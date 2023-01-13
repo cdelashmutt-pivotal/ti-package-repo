@@ -11,29 +11,22 @@ spec:
   releasedAt: 2023-01-16T04:45:00Z
   valuesSchema:
     openAPIv3:
-      title: gitea.vmware.com values schema
+      title: Dev Cluster Addons values schema
       examples:
-      - ingress_domain: shared.azure.grogscave.net
-        ingress_secret: default/default-cert-tls
+      - special_setting: foo
       properties:
-        ingress_domain:
+        special_setting:
           type: string
-          description: Top level ingress domain for cluster.  Will prepend "gitea" to the domain for ingress.
+          description: A special setting that you want to expose to the teams installing this package
           examples:
-          - shared.azure.grogscave.net
-        ingress_secret:
-          type: string
-          description: Name of TLS secret to use with HTTPProxy.  Can be a delgated secret from another namespace.
-          examples:
-          - my-tls-secret
-          - default/default-cert-tls
+          - foo
+          - bar
+          - foobar
   template:
     spec:
       fetch:
-      - git:
-          url: https://github.com/cdelashmutt-pivotal/dev-cluster-addons
-          ref: origin/main
-          lfsSkipSmudge: true
+      - imgpkgBundle:
+          image: ghcr.io/cdelashmutt-pivotal/dev-cluster-addons.ti.com:0.0.1
       template:
       - ytt:
           paths:
