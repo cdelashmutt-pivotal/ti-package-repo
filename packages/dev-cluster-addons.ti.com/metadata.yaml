@@ -3,7 +3,7 @@ kind: PackageMetadata
 metadata:
   name: dev-cluster-addons.ti.com
 spec:
-  displayName: "dev-cluster-addons"
+  displayName: "TI Dev Cluster Addons"
   longDescription: "A package of addons that contains commonly needed resources for development clusters"
   shortDescription: "Dev Cluster Addons"
   maintainers:
