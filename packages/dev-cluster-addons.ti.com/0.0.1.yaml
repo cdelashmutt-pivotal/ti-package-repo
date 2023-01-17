@@ -7,7 +7,7 @@ spec:
   refName: dev-cluster-addons.ti.com
   version: 0.0.1
   releaseNotes: |
-        Initial release of the dev-cluster-addons package that includes fluent-bit
+        Initial release of the dev-cluster-addons package that includes fluent-bit, a cron job, and memcached installed from a helm chart.
   releasedAt: 2023-01-16T04:45:00Z
   valuesSchema:
     openAPIv3:

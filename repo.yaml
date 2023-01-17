@@ -4,6 +4,7 @@ kind: PackageRepository
 metadata:
   name: ti-package-repo
 spec:
+  syncPeriod: 1m
   fetch:
-    imgPkgBundle:
+    imgpkgBundle:
       image: ghcr.io/cdelashmutt-pivotal/ti-package-repo:0.0.1
