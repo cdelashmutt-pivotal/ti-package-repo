@@ -7,5 +7,5 @@ images:
       - resolved:
           tag: 0.0.1
           url: ghcr.io/cdelashmutt-pivotal/dev-cluster-addons.ti.com:0.0.1
-  image: ghcr.io/cdelashmutt-pivotal/dev-cluster-addons.ti.com@sha256:bec3ccb7364d20f37e2430e35a848838461714d3db70c38b5166f5da5fdee9be
+  image: ghcr.io/cdelashmutt-pivotal/dev-cluster-addons.ti.com@sha256:a53bb9b8670ec75e55e6f439bc0ccb00b5215f4e23dc42ced10081019ce474cf
 kind: ImagesLock
